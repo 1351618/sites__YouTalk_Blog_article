@@ -6,17 +6,37 @@ ul {
     list-style-type: none;
 }
 
-/* ul {
-    list-style-type: none;
-  } */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat.woff') format('woff'),
+        url('Montserrat-BlackItalic.woff') format('woff'),
+        url('Montserrat-Bold.woff') format('woff'),
+        url('Montserrat-BoldItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+
 
 /* 1й экран ---------------------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 1025px) {
 
     .header {
-        background-color: aqua;
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
+        border-bottom: 2px solid #EFF5FB;
+        padding: 20px 120px 0px;
+        height: 52px;
+    }
+
+    .header__logo img {
+        width: 51px;
+        height: auto;
     }
 
     .header__menu_button {
@@ -70,9 +90,17 @@ ul {
 @media only screen and (min-width: 770px) and (max-width: 1024px) {
 
     .header {
-        background-color: rgb(255, 21, 0);
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
+        border-bottom: 2px solid #EFF5FB;
+        padding: 20px 32px 0px;
+        height: 52px;
+    }
+
+    .header__logo img {
+        width: 51px;
+        height: auto;
     }
 
     .header__menu_button {
@@ -112,9 +140,17 @@ ul {
 @media only screen and (min-width: 391px) and (max-width: 769px) {
 
     .header {
-        background-color: rgb(23, 10, 9);
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
+        border-bottom: 2px solid #EFF5FB;
+        padding: 11px 16px 0px;
+        height: 45px;
+    }
+
+    .header__logo img {
+        width: 48px;
+        height: auto;
     }
 
     .header__button,
@@ -147,9 +183,17 @@ ul {
 @media only screen and (max-width: 390px) {
 
     .header {
-        background-color: #d70fbc;
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
+        border-bottom: 2px solid #EFF5FB;
+        padding: 11px 16px 0px;
+        height: 45px;
+    }
+
+    .header__logo img {
+        width: 48px;
+        height: auto;
     }
 
     .header__button,
