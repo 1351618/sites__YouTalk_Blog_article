@@ -55,7 +55,7 @@ body {
 
 
     main {
-        background-color: rgba(0, 8, 255, 0.914);
+        /* background-color: rgba(0, 8, 255, 0.914); */
         padding: 16px 120px 1px 120px;
         display: flex;
         background-image: url('../images/fon_1.png'), url('../images/fon_2.png'), url('../images/fon_3.png');
@@ -64,19 +64,41 @@ body {
         background-size: 29%, 17%, 6%;
     }
 
+    .main__path {
+        color: brown;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* рекламные банеры */
+
     #main,
     #ribbon {
         flex-grow: 1;
     }
 
     #main {
-        background-color: rgba(0, 0, 255, 0.307);
+        /* background-color: rgba(0, 0, 255, 0.307); */
         max-width: 690px;
         margin-right: 120px;
     }
 
     #ribbon {
-        background-color: rgba(58, 226, 43, 0.264);
+        /* background-color: rgba(58, 226, 43, 0.264); */
 
     }
 
@@ -102,22 +124,90 @@ body {
     }
 
     .ribbon__bock-free_1 img {
-        margin-top: 24px;
+        /* margin-top: 24px; */
     }
 
-    .ribbon__bock-free_2 img {
-        margin-top: 24px;
+    /* 2й рекламный банер ====== */
+    .ribbon__bock-free_2 {
+        position: relative;
+    }
+
+    div.ribbon__bock-free_2 img[src="images/face_spam.png"] {
+        position: absolute;
         width: 140px;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        top: 24px;
+        left: 0;
+        right: 0;
+        margin: auto;
         border-radius: 50%;
     }
 
+    .ribbon__bock-free_2 a:nth-child(2),
+    .ribbon__bock-free_2 a:first-child {
+        background-color: #f3f4f844;
+        margin-top: 16px;
+        margin-left: 16px;
+        width: 105px;
+        height: 24px;
+        border-radius: 6px;
+    }
 
+    .ribbon__bock-free_2 a:nth-child(2) {
+        margin-top: 8px;
+    }
+
+    .ribbon__bock-free_2_h3 {
+        padding-top: 82px;
+    }
+
+    .ribbon__bock-free_2_h3-psixo {
+        margin: 4px auto;
+        font-size: medium;
+    }
+
+    .ribbon__bock-free_2_experience {
+        margin: auto;
+        font-size: 16px;
+        font-weight: 800;
+    }
+
+    .ribbon__bock-free_2 li::before {
+        content: '•';
+        color: #35B3A9;
+        margin-right: 5px;
+        font-size: 24px
+    }
+
+    /* рекламный банер 3 ==== */
+    .ribbon__bock-free_4,
+    .ribbon__bock-free_3 {
+        height: 291px !important;
+    }
+
+    .ribbon__bock-free_3 img {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+
+
+
+
+
+    .ribbon__bock-free_2_h4 {
+        margin: 4px auto;
+        color: #A2A7B1;
+        font-size: 14px;
+        font-weight: normal;
+        border-block-end-color: 2px;
+        border-bottom: 2px solid #A2A7B1;
+        padding-bottom: 16px;
+    }
 
     .ribbon__bock-free_1_h3,
-    .ribbon__bock-free_2_h3 {
+    .ribbon__bock-free_2_h3,
+    .ribbon__bock-free_4_p {
         margin: 24px 24px 0px 24px;
         text-align: center;
     }
@@ -128,7 +218,8 @@ body {
     }
 
     .ribbon__bock-free_1_buttom,
-    .ribbon__bock-free_2_buttom {
+    .ribbon__bock-free_2_buttom,
+    .ribbon__bock-free_4_button {
         margin: auto auto 24px;
         width: 234px;
         height: 48px;
@@ -140,6 +231,51 @@ body {
         font-size: 16px;
     }
 
+    /* рекламный банер 4 ==== */
+
+    .ribbon__bock-free_4_1,
+    .ribbon__bock-free_4_2 {
+        display: inline-block;
+    }
+
+
+    .ribbon__bock-free_4_1 {
+        color: #2963A3;
+        margin: 32px 0 0 32px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .ribbon__bock-free_4_2 {
+        color: #2963A3;
+        margin: 32px 0 0 4px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .ribbon__bock-free_4_price {
+        color: #000000;
+        margin: 16px 4px 0px 32px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .ribbon__bock-free_4_button {
+        margin: 16px 0px 0px 32px;
+        width: 108px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     .footer__img img {
         width: 100%;
         height: auto;
@@ -149,6 +285,34 @@ body {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 2й экран ---------------------------------------------------------------------------------------------------------------- */
 @media only screen and (min-width: 770px) and (max-width: 1024px) {
