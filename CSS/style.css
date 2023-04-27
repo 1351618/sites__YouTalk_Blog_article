@@ -24,6 +24,10 @@ body {
     height: 16px;
 }
 
+img {
+    max-width: 100%;
+}
+
 
 
 /* 1й экран ---------------------------------------------------------------------------------------------------------------- */
@@ -35,12 +39,24 @@ body {
         justify-content: space-between;
         border-bottom: 2px solid #EFF5FB;
         padding: 20px 120px 0px;
-        height: 52px;
+        height: 76px;
     }
 
     .header__logo img {
         width: 51px;
         height: auto;
+    }
+
+    .header .button {
+        margin: auto auto 24px;
+        width: 234px;
+        height: 48px;
+        background-color: #35B3A9;
+        border: none;
+        border-radius: 4px;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 16px;
     }
 
     .header__menu_button {
@@ -64,24 +80,127 @@ body {
         background-size: 29%, 17%, 6%;
     }
 
-    .main__path {
-        color: brown;
+    .main__path,
+    .main__author-date,
+    .main__image-caption {
+        color: #868686;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-top: 54px;
+    }
+
+    /* img {
+        max-width: 100%;
+    } */
+
+    .main__author-date {
+        margin: 16px 0px 24px 0px;
+    }
+
+    .main__ul-li {
+        text-decoration: underline;
+        text-decoration-color: black;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+    }
+
+    .main__ul-li li {
+        margin-top: 4px;
+    }
+
+
+    .main__heading-h3 {
+        margin-top: 24px;
+    }
+
+    .main__blue-splash {
+        background-color: #F3F7FE;
+        border-radius: 16px;
+        padding: 10px 24px 1px 24px;
+    }
+
+    .main__blue-splash_text {
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    .main__What-anxiety-li li::before {
+        content: '•';
+        color: #35B3A9;
+        margin-right: 5px;
+        font-size: 24px;
+    }
+
+    .main__white-insert {
+        padding: 48px 0px 72px;
+        font-style: oblique;
+        text-align: center;
+    }
+
+    .main__picture-text {
+        display: flex;
+        gap: 24px;
+    }
+
+    .main__yellow-insert,
+    .main__light-orange-insert {
+        background-color: #FEFAEC;
+        padding: 0px 24px;
+        border-radius: 16px;
+    }
+
+
+
+    .main__yellow-insert h4,
+    .main__blue-insert h4,
+    .main__light-orange-insert h4 {
+        padding-top: 24px;
     }
 
 
 
 
+    .main__yellow-insert p,
+    .main__blue-insert p,
+    .main__light-orange-insert p {
+        padding-bottom: 24px;
+    }
+
+    #main__double-block {
+        display: flex;
+        gap: 24px;
+    }
+
+    .main__blue-insert {
+        background-color: #03b2a62d;
+        padding: 0px 24px;
+        border-radius: 16px;
+    }
+
+    #main__links-articles {
+        display: flex;
+    }
+
+    /* #main__links-articles a {
+        color: #2963A3;
+        font-size: 14px;
+    } */
+
+    #main__links-articles {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
 
 
-
-
-
-
-
-
-
-
-
+    #main__links-articles a {
+        color: #2963A3;
+        font-size: 14px;
+        margin-right: 4px;
+        white-space: nowrap;
+    }
 
 
     /* рекламные банеры */
@@ -217,9 +336,12 @@ body {
         text-align: center;
     }
 
+
+    .header .button,
     .ribbon__bock-free_1_buttom,
     .ribbon__bock-free_2_buttom,
-    .ribbon__bock-free_4_button {
+    .ribbon__bock-free_4_button,
+    #footer__buttom {
         margin: auto auto 24px;
         width: 234px;
         height: 48px;
@@ -266,14 +388,17 @@ body {
     }
 
 
+    .footer__block {
+        display: flex;
+        padding: 72px 120px;
+        margin: 48px 120px 10px;
+        border-top: 2px solid #DEDEDE;
+        justify-content: space-between;
+    }
 
-
-
-
-
-
-
-
+    .footer__block_2 img {
+        max-width: 370px;
+    }
 
 
     .footer__img img {
